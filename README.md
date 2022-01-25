@@ -1,4 +1,5 @@
 # MVC-Examples
+# DATAViewMvc(Folder) 
 
 #### Example:1 DATAViewMvc 
 ## ! .Data sending Controller to UI
@@ -10,7 +11,7 @@
 ### MODEL (model map for sharing the data)
 #### model is nothing but passing the data from CONTROLLER end to UI 
 #### and setting the data from controller method passed modelattribute
-# 1.Example
+## 1.Example
 ##### //No need to take domain class to set the data we are setting the data by using Model(UI) 
 ##### @RequestMapping("/data")
 ##### public String data(Model m) {
@@ -50,7 +51,7 @@
 #### 		return "ram";
 
 
-# 3.Example
+## 3.Example
 #### Here created two methods
 #### One for get the text box to take the data 
 #### One for read the data from that text box
@@ -66,4 +67,19 @@
 ##### 	model.addAttribute("empname",name);
 #####   return "showmvc";
 
-		
+# mvcFormSample 
+##### MVC SAMPLE JSP FOEM SHOW
+##### 	 * creating a model class for storing the data using .html or .jsp file
+##### 	 * branches should be list and colleges should be list and 
+#####    * Here i worked on 
+#####  	 * select drop down
+#####    * check box
+#####    * text data
+##### 	 * address box
+##### 	 * radio button
+##### 	 * date calendar
+###### Controller
+#####     here we need to give register page for showing and taking the data by using one method
+##### 	  for reading the above one method im using second method "/data" $ dollar symbol data
+##### 	  ${data}----->model.addAttribute("data",datamodel);
+##### 	 it will read the "reg2" page
